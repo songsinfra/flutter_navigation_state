@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// routes를 정의하여 사용 한다.  페이지 경로를 지정할수 있다.
 
 void main() => runApp(NavigatorRoutesDemo());
 
@@ -17,8 +18,9 @@ class NavigatorRoutesDemo extends StatelessWidget {
 }
 
 class MainPage extends StatelessWidget {
+  //pushNamed를 사용 하였다는것에 주의.
   _showNextPage(BuildContext context) => Navigator.pushNamed(context, '/next');
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

@@ -13,7 +13,14 @@ class NavigatorPushDemo extends StatelessWidget {
 }
 
 class MainPage extends StatelessWidget {
-   _showNextPage(BuildContext context) => Navigator.push(
+  //push 새로운 화면 표시 , BuildContext는  flutter 내부의 객체 접근시 필요하다.
+  //MaterialPageRoute는 화면전환 클래스이다. 어떤 화면으로 이동할지 구체적인 내용을 정의 할수 있다.
+  // Nextpage는  새로운 페이지를 위미한다.
+
+  // -------------------------------------------------------
+  // "_showNextPage"는 메서드이다.
+  // -------------------------------------------------------
+  _showNextPage(BuildContext context) => Navigator.push(
       context, MaterialPageRoute(builder: (context) => NextPage()));
 
   @override
@@ -32,6 +39,8 @@ class MainPage extends StatelessWidget {
   }
 }
 
+//독립적인 화면임으로  scaffold 위젯으로 시작
+// _backToMainPage를 누르면  이전 페이지로 이동 한다.
 class NextPage extends StatelessWidget {
   _backToMainPage(BuildContext context) => Navigator.pop(context);
 

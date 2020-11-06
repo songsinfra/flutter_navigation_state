@@ -1,5 +1,11 @@
-import 'package:flutter/material.dart';
 import 'package:contacts_service/contacts_service.dart';
+import 'package:flutter/material.dart';
+
+/*
+     -----------------------------------------------------------------
+      주소록 상세 화면
+     -----------------------------------------------------------------
+ */
 
 class ContactDetailPage extends StatelessWidget {
   static const String routeName = '/contact';
