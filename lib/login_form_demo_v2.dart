@@ -14,7 +14,7 @@ import 'state_simple.dart';
 void main() => runApp(loginFormApp);
 
 // ChangeNotifierProvider는 단일 모델을 제공하는 역활
-// 다수의 모델에 접근 하려면 MultiProvider 클래스를 사용 해야 함.
+// 다수의 모델에 접근 하려면 MultiProvider 클래스를 사용 해야 함..
 //
 var loginFormApp = ChangeNotifierProvider(
   builder: (context) => SimpleState(),

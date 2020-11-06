@@ -1,10 +1,16 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'dart:io';
-
 import 'login_form_demo_v2.dart';
 import 'state_simple.dart';
+
+/*
+     -----------------------------------------------------------------
+      로그인 페이지
+     -----------------------------------------------------------------
+ */
 
 class LoginPage extends StatefulWidget {
   @override
@@ -19,9 +25,12 @@ class LoginPageState extends State<LoginPage> {
 
   void _onLogin(BuildContext context) {
     final String email = _emailController.text;
+    // Provider.of를 썼음을 기억하자.
     final SimpleState state = Provider.of<SimpleState>(context);
-    state.setEmail(email);
 
+    //로그인 한 이메일을 셋팅 하여 전달 한다.
+    state.setEmail(email);
+    // 이동 처리
     Navigator.pushNamed(context, MAIN_PAGE);
   }
 
