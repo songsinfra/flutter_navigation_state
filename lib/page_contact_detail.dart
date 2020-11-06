@@ -12,6 +12,7 @@ class ContactDetailPage extends StatelessWidget {
 
   ContactDetailPage(this._contact);
 
+  // 프레임워크- 주소록 객체
   final Contact _contact;
 
   @override
